@@ -57,7 +57,7 @@
 						<small>Brought to you by <a href="www.girldevelopit.com/chapters/cincinnati">Girl Develop It Cincinnati</a> | <a href="http://www.twitter.com/gdicincinnati">@GDICincinnati</a></small>
 					</p>
 					<p>
-						<small>Presented by <a href="http://www.laurenwoodrick.com" target="_blank">Lauren Woodrick</a> | <a href="http://www.twitter.com/loremipsam" target="_blank">@LoremIpsam</a></small>
+						<small>Presented by Lauren Woodrick | <a href="http://www.twitter.com/loremipsam" target="_blank">@LoremIpsam</a></small>
 					</p>
 				</section>
 
@@ -75,8 +75,8 @@
 
 				<!-- Welcome (Important to Remember) -->
 
-				<section data-background="img/slide-images/confuseddog.jpg">
-					<!-- <img src="img/slide-images/confuseddog.jpg" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'"> -->
+				<section>
+					<img src="img/slide-images/confuseddog.jpg" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
 				</section>
 
 				<section>
@@ -200,7 +200,7 @@
 				<section>
 					<h2>Computation: The Early Years</h2>
 					<img src="img/slide-images/adalovelace.jpg" alt="A portrait of Ada Lovelace." />
-					<p><small>Our Lady of Conceptual Programming, <strong class="blue">Ada Lovelace</strong></small></p>
+					<p><small><i>Our Lady of Conceptual Programming, <strong class="blue">Ada Lovelace</strong></i></small></p>
 
 					<aside class="notes">
 						Said first programmer was Ada Lovelace.
@@ -507,7 +507,7 @@
 				<section>
 					<img src="img/slide-images/gracehopper.jpg" alt="A portrait of Grace Hopper" />
 					<p>
-						<small>Our Lady of Code Compilation, <strong class="blue">Grace Hopper</strong></small>
+						<small><i>Our Lady of Code Compilation, <strong class="blue">Grace Hopper</strong></i></small>
 					</p>
 					<aside class="notes">
 						This person was Grace Hopper, who, after absolutely crushing it in the
@@ -545,7 +545,7 @@
 				<section>
 					<h2>How We Talk To Computers: <br>The Third Generation</h2>
 					<div class="halfblock">
-						<strong style="text-align: right; display: block; padding-right: 30px;" class='blue'>Examples: </strong>
+						<strong style="text-align: right; display: block; padding-right: 30px;" class='green'>Examples: </strong>
 					</div>
 					<div class="halfblock">
 						<ul style="float: left;">
@@ -564,7 +564,7 @@
 				<section>
 					<h2>How We Talk To Computers: <br>The Fourth Generation</h2>
 					<div class="halfblock">
-						<strong style="text-align: right; display: block; padding-right: 30px;" class='blue'>Examples: </strong>
+						<strong style="text-align: right; display: block; padding-right: 30px;" class='green'>Examples: </strong>
 					</div>
 					<div class="halfblock">
 						<ul style="float: left;">
@@ -927,15 +927,19 @@ print 'Out of papers! Go home!';</code></pre>
 
         <section> <!-- Slide 36 -->
           <h2>Beware the Infinite Loop!</h2>
-          <ul>
-            <li>An <strong class="blue">infinite loop</strong> is a loop that will never meet the condition to stop. It will keep going until it's used up all your computer's (or server's) memory (RAM). This is bad!</li>
-            <li>Example for our loop:
+            <p>An <strong class="blue">infinite loop</strong> is a loop that will never meet the condition to stop.<br> It will keep going until it's used up all your computer's (or server's) memory (RAM). This is bad!</p>
+            <p class="green">Example for our loop:</p>
               <ul class="small">
-                <li>If the <code>papers_to_deliver = papers_to_deliver - 1</code> line was missing, it would keep looping because 65 is always greater than 0!</li>
-                <li>If <code>papers_to_deliver = papers_to_deliver - 1</code> was changed to <code>+ 1</code>, it would keep adding 1 to 65 forever!</li>
+                <li>If the <span class='code-fragment'><code>papers_to_deliver = papers_to_deliver - 1</code></span> line was missing, it would keep looping because 65 is always greater than 0!</li>
+                <li>If <span class='code-fragment'><code>papers_to_deliver = papers_to_deliver - 1</code></span> was changed to <span class='code-fragment'><code>+ 1</code></span>, it would keep adding 1 to 65 forever!</li>
               </ul>
-            </li>
-          </ul>
+
+							<aside class="notes">
+								An infinite loop is a loop that will never meet the condition to stop.
+								As we alluded to earlier, computers do exactly what you ask hem
+								It will keep going until it's used up all your computer's (or server's)
+								memory (RAM). This is bad!
+							</aside>
         </section>
 
         <section data-background="img/slide-images/trapped-in-loop.gif">
@@ -964,6 +968,46 @@ print 'Out of papers! Go home!';</code></pre>
             </ul>
           </ol>
         </section>
+
+
+<!-- TODO: Time for Some Jokes -->
+
+			<section>
+				<h2>Wrapping up...</h2>
+				<p>As promised, some terrible programming jokes.</p>
+			</section>
+
+			<section>
+				<h2 class="blue" style="line-height: 1.2;">
+					There are 10 types of people &mdash;
+					<span class="fragment">those that know binary</span>
+					<span class="fragment">and those that don't.</span>
+				</h2>
+			</section>
+
+			<section>
+				<h3 class="blue left-align" style="line-height: 1.2;">
+					A programmer's partner sends them to go pick up some groceries, asking
+					them to get a loaf of bread, and, if there are eggs, to get twelve.
+				</h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">The programmer returns with twelve loaves of bread.</h3>
+			</section>
+
+			<section>
+				<h3 class="blue left-align" style="line-height: 1.2;">
+					A programmer's partner sends them to go pick up some groceries, asking
+					them to get a loaf of bread, and, if there are eggs, to get twelve.
+				</h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">The programmer returns with twelve loaves of bread.</h3>
+			</section>
+
+
+
+
+
+
+
+<!-- TODO: Next Steps -->
 
         <section>
           <h2>Online Resources &amp; Books</h2>
@@ -1008,6 +1052,7 @@ print 'Out of papers! Go home!';</code></pre>
         </div>
       </footer>
 		</div>
+
 
 
 		<script src="lib/js/head.min.js"></script>
