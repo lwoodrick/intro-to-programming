@@ -130,6 +130,10 @@
 						<img src="img/slide-images/sliderule.jpg" alt="A slide rule." />
 					</div>
 
+					<p>
+						<i><small>Examples of some early analog calculators.</small></i>
+					</p>
+
 					<aside class="notes">
 						People have been using tools with varying levels of complexity to make math
 						easier for years, from abacuses for basic math to slide rules for trigonometry
@@ -144,6 +148,10 @@
 					<h2>Computation: The Early Years</h2>
 					<img src="img/slide-images/difference-engine-drawing.jpg" style="height: 50vh;" alt="Difference Engine drawing" />
 
+					<p>
+						<i><small>Diagram of Charles Babbage's difference engine.</small></i>
+					</p>
+
 					<aside class="notes">
 						Until 1822 when Charles Babbage concepted and received funding from the British government
 						to fashion a mechanical calculator that would print up tables of equations that engineers needed
@@ -157,6 +165,9 @@
 					<h2>Computation: The Early Years</h2>
 
 					<img src="img/slide-images/differenceengine.jpg" style="height: 50vh;" alt="A constructed difference engine" />
+					<p>
+						<i><small>An actual difference engine built out.</small></i>
+					</p>
 
 					<aside class="notes">
 						As far as the British government was concerned, Babbage kind of mucked this up too, as the
@@ -172,6 +183,9 @@
 				<section>
 					<h2>Computation: The Early Years</h2>
 					<img src="img/slide-images/adaprogram.jpg" alt="A diagram showing Ada Lovelace's program for the computation of Bernoulli numbers." />
+					<p>
+						<i><small>A program for the analytical engine.</small></i>
+					</p>
 					<aside class="notes">
 						Babbage's mathematical bestie was also pretty excited about this analytical
 						engine, and when asked to translate a lecture that he did for science,
@@ -197,8 +211,10 @@
 
 				<section>
 					<h2>Computation: The Early Years</h2>
-
-					<img class="fragment" src="img/slide-images/analyticalEngine.jpg" alt="Illustration of Ada Lovelace and Charles Babbage standing beside a constructed Analytical Engine." />
+					<img src="img/slide-images/analyticalEngine.jpg" alt="Illustration of Ada Lovelace and Charles Babbage standing beside a constructed Analytical Engine." />
+					<p>
+						<i><small>Analytical Engine per Sydney Padua's <strong>The Thrilling Adventures of Lovelace and Babbage</strong>.</small></i>
+					</p>
 
 					<aside class="notes">
 						How computers ultimately ended up working primarily looked much different
@@ -213,7 +229,7 @@
 					<h2>Computation: The Early Years</h2>
 
 					<img src="img/slide-images/colossus.png" style="height: 60vh" alt="Photo of two programmers next to the Colossus at Bletchley Park" />
-					<small>Programmers working with the Colossus, a Nat-zee code-breakin'<br> machine and one of the first digital computers</small>
+					<p><small><i>Programmers working with the Colossus, a Nat-zee code-breakin'<br> machine and one of the first digital computers.</i></small></p>
 
 					<aside class="notes">
 						... not much smaller of a device, but a bit more simple, since inputs could be
@@ -532,7 +548,7 @@
 						<strong style="text-align: right; display: block; padding-right: 30px;" class='blue'>Examples: </strong>
 					</div>
 					<div class="halfblock">
-						<ul>
+						<ul style="float: left;">
 							<li>COBOL</li>
 							<li>FORTRAN</li>
 							<li>BASIC</li>
@@ -551,7 +567,7 @@
 						<strong style="text-align: right; display: block; padding-right: 30px;" class='blue'>Examples: </strong>
 					</div>
 					<div class="halfblock">
-						<ul>
+						<ul style="float: left;">
 							<li>JavaScript</li>
 							<li>Python</li>
 							<li>Ruby</li>
@@ -724,7 +740,7 @@ var bookAuthor = "Ryan North";</code></pre>
 
 				<section>
 					<h2>Variable Types: Booleans</h2>
-					<p class="copy--small box">Variables can also be used to store <strong class='blue'>TRUE</strong> or <strong class='blue'>FALSE</strong> as a value.</p>
+					<p class="copy--small box">Variables can also be used to store<br> <strong class='blue'>TRUE</strong> or <strong class='blue'>FALSE</strong> as a value.</p>
 				</section>
 				<section data-background="img/slide-images/amazonsample.jpg">
 
@@ -740,13 +756,11 @@ var bookAuthor = "Ryan North";</code></pre>
 
 				<section>
 					<h2>Let's Talk To Computers: Logical Structures</h2>
-					<ul>
-						<p>Once you have your data in the program, it's time to manipulate it!</p>
-						<p>Logical structures provide the basis for doing things with that data.</p>
-						<aside class="notes">
-							If you understand the concepts, you can learn how to represent them in most programming languages.
-						</aside>
-					</ul>
+					<p>Once you have your data in the program, <br>you can manipulate it!</p>
+					<p class="fragment">Logical structures provide the basis <br>for doing things with that data.</p>
+					<aside class="notes">
+						If you understand the concepts, you can learn how to represent them in most programming languages.
+					</aside>
 				</section>
 
 				<section>
@@ -776,8 +790,8 @@ var bookAuthor = "Ryan North";</code></pre>
 				<section>
 					<h2>Let's Talk To Computers:<br>If/Else Statements</h2>
 					<p>If/Else statements evaluate a condition and perform actions based on the result.</p>
-					<p><strong class="green">If the condition is true</strong>, the computer does the action or actions that are listed after the <b class="blue">IF</b> statement</p>
-					<p><strong class="green">If the condition is false</strong>, the computer does the action or actions that are listed in the <b class="blue">ELSE</b> statement.</p>
+					<p><strong class="green">If the condition is true</strong>, then the computer does the action or actions that are listed after the <b class="blue">IF</b> statement</p>
+					<p><strong class="green">If the condition is false</strong>, then the computer does the action or actions that are listed in the <b class="blue">ELSE</b> statement.</p>
 
 					<aside class="notes">
 						If we popped back to Amazon, we could say "IF" you're logged in, show your name and cart numbers.
@@ -827,10 +841,9 @@ end</code></pre>
 				<section>
 					<h2>Let's Talk To Computers: Loops</h2>
 					<p>A loop is a <strong class="blue">set of instructions that repeats</strong><br/>until a certain condition is reached.</p>
-					<p>Two kinds of loops are <b class="blue">For Loops</b> and <b class="blue">While Loops</b>.</p>
+					<p class="fragment">Two kinds of loops are <b class="blue">For Loops</b> and <b class="blue">While Loops</b>.</p>
 				</section>
 
-				<section>
 					<section>
 						<h2>Why Use Loops?</h2>
 							<p>Loops are awesome at doing repetitive tasks and reducing the amount of code you need to write.</p>
@@ -867,7 +880,6 @@ while number_of_cars > 0:
 						It's as if you were distributing bees and not cars.
 					</aside>
 				</section>
-			</section>
 
 
         <section>
@@ -888,9 +900,9 @@ while papers_to_deliver > 0:
 
 print 'Out of papers! Go home!';</code></pre>
           <ul class="small">
-            <li><strong>Change the numbers</strong> to see what happens.</li>
+            <li><strong>Change the numbers</strong> to see what happens</li>
             <li><strong>Change the operators</strong> (greater than, less than, etc.)</li>
-            <li><strong>Change the string</strong> statements.</li>
+            <li><strong>Change the string</strong> statements</li>
           </ul>
 
 					<aside class="notes">
