@@ -8,11 +8,7 @@
     "test": "grunt test",
     "start": ""
   },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
-  },
+  "author": "Hakim El Hattab <hakim.elhattab@gmail.com> (http://hakim.se)",
   "repository": {
     "type": "git",
     "url": "git://github.com/hakimel/reveal.js.git"
@@ -42,5 +38,13 @@
       "type": "MIT",
       "url": "https://github.com/hakimel/reveal.js/blob/master/LICENSE"
     }
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/hakimel/reveal.js/issues"
+  },
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
 }

@@ -50,7 +50,7 @@ body {
 div.halfblock{
 	float: left;
 	width: 45%;
-	text-align: left;
+	/*text-align: left;*/
 	margin-right: 5%;}
 
 div.left-align{

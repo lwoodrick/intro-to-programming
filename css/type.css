@@ -1,0 +1,67 @@
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+
+.reveal h1 {font-size: 1.75em; line-height: 1em; margin-bottom: 1em;}
+.reveal h2 {font-size: 1.5em; line-height: 1em;}
+.reveal h3 {font-size: 1.25em; line-height: 1em; margin-top: 1em;}
+
+.reveal section img {border: none;}
+
+.reveal blockquote {font-style: normal; box-shadow: none;}
+.reveal blockquote:before {
+  content: "\201C";
+  color: #92bb44;
+  font-size: 1.2em;
+  padding-right: 5px;
+}
+.reveal blockquote:after {
+  content: "\201D";
+  color: #92bb44;
+  font-size: 1.2em;
+  padding-left: 5px;
+}
+
+.reveal ul {
+  list-style: none;
+}
+
+.reveal li {
+  padding-bottom: 0.25em;
+}
+
+.reveal ul li:before {
+  content:"\2022";
+  color: #92bb44;
+  margin-left: -2.5em;
+  margin-right: 0.5em;
+}
+
+.reveal ol {
+  list-style: none;;
+  counter-reset: gdi-counter;
+}
+
+.reveal ol li:before {
+  content: counter(gdi-counter);
+  counter-increment: gdi-counter;
+  font-weight: 700;
+  color: #92bb44;
+  margin-left: -2.5em;
+  margin-right: 0.5em;
+}
+
+.reveal .small {
+  font-size: 0.8em;
+}
+
+.reveal p {
+  margin-bottom: 20px;
+}
