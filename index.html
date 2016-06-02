@@ -82,18 +82,35 @@
 					3. What's your favorite movie?
 				</section>
 
-				<!-- Computers are Awesome -->
+				<!-- Overview -->
+
 				<section>
-					<h2>Computers are Awesome!</h2>
-					<ul>
-						<li class="fragment">They take us places!</li>
-						<li class="fragment">They allow us to buy stuff anywhere!</li>
-						<li class="fragment">They help us communicate!</li>
-					</ul>
+					<h2>What We'll Be Covering:</h2>
+					<ol>
+						<li class="fragment">The History of Computing</li>
+						<li class="fragment">How Computers Think</li>
+						<li class="fragment">How Programming Languages Developed</li>
+						<li class="fragment">Basic Programming Concepts</li>
+						<li class="fragment">What Should I Do Next?</li>
+					</ol>
+
+					<aside class="notes">
+						In this workshop, we'll be sampling from a number of topics, starting
+						with running through the history of how computers as we understand
+						them today came to be, how computers think,
+						and how the way humans talk to computers has changed. Then we'll dig
+						into some top-level programming concepts to lay a nice foundation for
+						your further forays into programming.
+
+						By the end of this workshop, you will also have dabbled in JavaScript,
+						Python, and Ruby, and have an enhanced understanding of many programming
+						jokes.
+					</aside>
 				</section>
 
 				<!-- SEGUE: The History of Computing -->
 				<section data-background="img/slide-images/go-back.gif"></section>
+
 
 				<!-- Computation: The Early Years -->
 
@@ -177,14 +194,14 @@
 					<h2>Computation: The Early Years</h2>
 					<img src="img/slide-images/adaprogram.jpg" alt="A diagram showing Ada Lovelace's program for the computation of Bernoulli numbers." />
 					<p>
-						<i><small>A program for the analytical engine.</small></i>
+						<i><small>A program for the computation of Bernoulli numbers designed for the analytical engine.</small></i>
 					</p>
 					<aside class="notes">
 						Babbage's mathematical bestie was also pretty excited about this analytical
-						engine, and when asked to translate a lecture that he did for science,
-						casually included annotations several times longer than the entire talk, explaining
-						why it was so cool, among which was an algorithm designed specifically use on the
-						engine, the first published computer program.
+						engine, and when asked to translate a paper on a lecture he gave on the machine in French,
+						in 1843 casually included annotations several times longer than the entire, explaining
+						why it was so cool. Including an algorithm designed specifically use on the
+						engine, which has the distinction of being the first published computer program.
 					</aside>
 				</section>
 
@@ -211,8 +228,9 @@
 
 					<aside class="notes">
 						How computers ultimately ended up working primarily looked much different
-						from Babbage’s initial design, because base-ten counting makes for a much
-						more complicated device then base-two.
+						from Babbage’s initial design, because base-ten counting — the numbering
+						system that we're most familiar with and gets the most play in the West,
+						makes for a much more complicated device then base-two.
 					</aside>
 				</section>
 
@@ -225,9 +243,7 @@
 					<p><small><i>Programmers working with the Colossus, a Nat-zee code-breakin'<br> machine and one of the first digital computers.</i></small></p>
 
 					<aside class="notes">
-						It didn't make for much smaller of a device, but a bit more simple in
-						construction. Inputs could be managed by feeding the computers punched
-						film and paper or manually adjusting plugs and switches.
+						... the device, however, was just as large.
 					</aside>
 				</section>
 
@@ -429,6 +445,20 @@
 				</section>
 
 				<section>
+					<h2>The Evolution of Programming Languages</h2>
+					<ul>
+						<li><strong class="blue">First Generation</strong>: Machine Code</li>
+						<li><strong class="blue">Second Generation (1949)</strong>: Assembly Code</li>
+						<li><strong class="blue">Third Generation (Late 1950s)</strong>: High-Level Language</li>
+						<li><strong class="blue">Fourth Generation (1980s)</strong>: Even Higher-Level Language</li>
+					</ul>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section>
 					<h2>How We Talk To Computers:<br> The First Generation</h2>
 					<p>
 						<strong class='blue'>Machine code</strong>, is the straight-up use
@@ -462,9 +492,9 @@
 						<img src="img/slide-images/assemblycode.gif" alt="A screencap of some gnarly assembly code." />
 					</p>
 					<aside class="notes">
-						The first response to machine code was assembly code. This was a small
-						step up from machine code in that it broke down the bits of code by
-						function and providing symbolic names for these chunks.
+						The first response to machine code was assembly code. These languages
+						made use of a program called an assembler that assigned chunks of zeros
+						and ones that had specific purposes to symbolic names.
 					</aside>
 
 				</section>
@@ -480,7 +510,9 @@
 						Assembly code… looks vaguely better than a sweep of binary.
 						It was more user-friendly in this respect, but a big problem with
 						assembly languages is that they’re incredibly specific — in that
-						they only work on a single type of computer architecture.
+						they only work on a single type of computer. Which sounds like
+						a bummer, but when the number of extant computers was in the
+						low double-digits, there wasn't too much pressure.
 					</aside>
 				</section>
 
@@ -489,8 +521,8 @@
 							saying "This is fine." -->
 					<aside class="notes">
 						For some, this was close enough. As much as they could hope for.
-						And besides, no big deal, all computers can really do is math
-						in ways that we tell it to really, really fast, right?
+						And besides, no big deal, computers are just glorified calculators
+						that work really, really fast, right?
 
 						... until someone came along who looked at this nonsense and thought
 						"No. This is not fine. This is ridiculous."
@@ -532,15 +564,33 @@
 						Third-generation programming languages, machine-independent, abstracted
 						further away from the computer and sounding much more human. These are
 						often referred to as high-level programming languages. For the sake of
-						comparison, here's the sample of an assembly language...
+						comparison, here's a 'hello world' program written in Assembly for Linux...
 					</aside>
 
 				</section>
 
 				<section>
 					<h2>Before / Assembly</h2>
-					<img src="img/slide-images/assemblycode.gif" alt="A screencap of some gnarly assembly code." />
-					<p><small><i>Some Assembly.</i></small></p>
+					<pre><code contenteditable="assembly" style="font-size: 0.6em; line-height: 1.3;">section     .text
+global      _start               		;must be declared for linker (ld)
+
+_start:                          		;tell linker entry point
+
+	mov     edx,len              		;message length
+	mov     ecx,msg              		;message to write
+	mov     ebx,1                		;file descriptor (stdout)
+	mov     eax,4                		;system call number (sys_write)
+	int     0x80                 		;call kernel
+
+	mov     eax,1                		;system call number (sys_exit)
+	int     0x80                 		;call kernel
+
+section     .data
+
+msg     db  'Hello, world!',0xa  ;our dear string
+len     equ $ - msg              ;length of our dear string
+					</code></pre>
+					<p><small><i>A touch of Assembly.</i></small></p>
 
 					<aside class="notes">
 						... and here's a 'hello world' program written in one of the first
@@ -601,16 +651,22 @@ STOP RUN.</code></pre>
 					</div>
 
 					<aside class="notes">
-						Since then, languages have continued to become more abstracted and
-						even-more user-friendly, and while there's not a super-distinct boundary
-						between the third and fourth generations outside of some changes in how
-						stored data interacts with programs, this started happening around the
-						mid-80s, incidentally as the web was coming into its own. But by this
+						While there's not a super-distinct boundary between the third and fourth generations,
+						there were definite developments in how programs handled stored data and
+						also in avenues for code use — namely, the emergence of the internet. But by this
 						time, there's a clear interest in making languages as clear as possible
 						to programmers, which is very nicely summed up in the philosophy of the
-						creator of Ruby, Yukihiro "Matz" Matsumoto, who hoped "to see Ruby help
-						every programmer in the world to be productive, and to enjoy programming,
-						and to be happy." which, as far as goals go, is both noble and adorable.
+						creator of Ruby, Yukihiro "Matz" Matsumoto. (slide advance)
+					</aside>
+				</section>
+
+				<section>
+					<img src="img/slide-images/ruby.jpeg" style="height: 40vh" alt="A Ruby icon.">
+					<blockquote>I want to see Ruby help <br>every programmer in the world <br>to be productive, and to enjoy programming, and to be happy.</blockquote>
+					<p><small>&mdash; Yukihiro "Matz" Matsumoto</small></p>
+
+					<aside class="notes">
+						... which, as far as goals go, is both noble and adorable.
 					</aside>
 				</section>
 
@@ -624,6 +680,69 @@ STOP RUN.</code></pre>
 					</aside>
 				</section>
 
+				<section>
+					<h1>To review...</h1>
+
+					<aside class="notes">
+						And now to review, we're going to look at all of these generations.
+						again, all performing a popular fist program — writing the text "Hello World."
+						to the screen.
+					</aside>
+				</section>
+
+				<section>
+					<h2>First Generation</h2>
+					<pre><code contenteditable="binary">011010000110010101101100011011000110111100100000011101110110111101110</code></pre>
+					<p><small><i>"Hello World" in binary.</i></small></p>
+
+					<aside class="notes">
+						This binary slide is kind of a fake-out. This is just the characters for
+						"Hello World" converted into their binary equivalents, this piece of code
+						wouldn't get anything to render on the screen.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Second Generation</h2>
+					<pre><code contenteditable="assembly" style="font-size: 0.6em; line-height: 1.3;">section     .text
+global      _start               		;must be declared for linker (ld)
+
+_start:                          		;tell linker entry point
+
+	mov     edx,len              		;message length
+	mov     ecx,msg              		;message to write
+	mov     ebx,1                		;file descriptor (stdout)
+	mov     eax,4                		;system call number (sys_write)
+	int     0x80                 		;call kernel
+
+	mov     eax,1                		;system call number (sys_exit)
+	int     0x80                 		;call kernel
+
+section     .data
+
+msg     db  'Hello, world!',0xa  ;our dear string
+len     equ $ - msg              ;length of our dear string
+					</code></pre>
+					<p><small><i>"Hello World" in Assembly.</i></small></p>
+				</section>
+
+				<section>
+					<h2>Third Generation</h2>
+					<pre><code contenteditable="cobol">IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLOWORLD.
+PROCEDURE DIVISION.
+MAIN.
+DISPLAY 'Hello, world.'.
+STOP RUN.</code></pre>
+					<p><small><i>"Hello World" in COBOL.</i></small></p>
+				</section>
+
+				<section>
+					<h2>Fourth Generation</h2>
+					<pre><code contenteditable="ruby">puts 'Hello, world!'</code></pre>
+					<small><i>"Hello World" in Ruby.</i></small>
+				</section>
+
 
 				<!-- How To Talk to Computers -->
 
@@ -631,8 +750,8 @@ STOP RUN.</code></pre>
 					<h1>How To Talk To Computers</h1>
 
 					<aside class="notes">
-						Now, we start to get to the fun part, where we start working on getting
-						computers to do our bidding. However... there are some caveats.
+						Now, we start to get to the fun part, where we start talking to computers.
+						However... there are some things to be aware of.
 					</aside>
 				</section>
 
@@ -640,7 +759,7 @@ STOP RUN.</code></pre>
 
 				<section>
 					<h2>How To Talk To Computers</h2>
-					<p>
+					<p class="fragment">
 						The best thing about computers is that they <br>will do exactly what you tell them to do.
 					</p>
 					<p class="fragment">
@@ -669,23 +788,14 @@ STOP RUN.</code></pre>
 						Amy will graciously demonstrate how computers tend to operate... by
 						attempting to make a peanut butter and jelly sandwich.
 
+						(DEMO)
+
 						As you can see, it's... not exactly that easy. While programming languages
 						look fairly similar to English, they're pretty particular about the way
 						that you relay instructions to them and aren't able to make assumptions
 						about what steps are necessary ahead of an action unless they're told
 						explicitly to them.
 
-					</aside>
-				</section>
-
-				<!-- Rubber Duck Debugging -->
-
-				<section data-background="img/slide-images/rubberduck.jpg">
-					<aside class="notes">
-						Which is why sometimes the best way to work through code that doesn't
-						quite work is to try and talk through it — and when you don't necessarily
-						have someone to ask for help, any inanimate object will do, giving
-						birth to the term "rubber duck debugging".
 					</aside>
 				</section>
 
@@ -709,9 +819,9 @@ STOP RUN.</code></pre>
 						<strong class="fragment highlight-blue">Loops</strong>!
 
 						<aside class="notes">
-							We'll be sampling from a few languages in this course, but for this
-							initial portion, this next section will be written in JavaScript, which
-							Taylor is going to be running next Wednesday.
+						  (Read Slide). As I alluded to earlier, we'll be sampling from Ruby, Python,
+							and JavaScript, but for this initial portion, we'll be using JavaScript, which
+							Taylor is going to be running the Intro class for next Wednesday.
 						</aside>
 				</section>
 
@@ -728,7 +838,7 @@ STOP RUN.</code></pre>
 var myQuest = "To find the Holy Grail";
 var myFavoriteColor = "orange";</code></pre>
 						</div>
-            <p class="fragment small" style="margin-top: 20px;">There are different kinds of variables based <br>on the information that you want to store.</p>
+            <p class="fragment small" style="margin-top: 20px;">Variables come in several flavors, but here we'll be covering<br> <strong class="blue">Numbers</strong>, <strong class="blue">Strings</strong>, and <strong class="blue">Booleans</strong>.</p>
 
 						<aside class="notes">
 							Some of of you may remember variables from algebra — but if any of
@@ -739,7 +849,8 @@ var myFavoriteColor = "orange";</code></pre>
 							you will just be telling it how.
 
 							There are a few different types of information that can be stored
-							as variables.
+							as variables — some of which are numbers, strings, and booleans.
+							The variables in the code chunk above are strings.
 						</aside>
 				</section>
 
@@ -783,43 +894,6 @@ var bookDiscount = 0.41;</code></pre>
 					</aside>
 				</section>
 
-				<!-- Variables: Variables are mutable -->
-
-				<section>
-					<h2>Variable Ability #1</h2>
-					<p>The value of variables can be updated over the course of a program.</p>
-				</section>
-
-				<!-- Variables: Variables are mutable (example) -->
-
-				<section>
-					<div>
-						<h2>Variable Ability #1</h2>
-						<img src="img/slide-images/fortasshole.jpg" alt="A picture of two cats fighting in a box." />
-					</div>
-					<aside class="notes">
-						Like we learned earlier, variables are storage containers... (advance
-						slide) ... much like this box is a container for cats. (advance slide)
-					</aside>
-				</section>
-
-				<section>
-						<h2>Variable Ability #1</h2>
-						<pre><code contenteditable class ="javascript">var fortAssholePopulation = 2;
-console.log(fortAssholePopulation);
-fortAssholePopulation = 1;
-console.log(fortAssholePopulation);</code></pre>
-						<p class="right-align" style="padding-right: 50px;">
-							<a href="https://repl.it/CX3X" target="_blank">(repl.it)</a>
-						</p>
-					<aside class="notes">
-						If we were to take a census of Fort Asshole, we might declare the variable
-						fortAssholePopulation is declared and then assign it the value of two.
-						If a cat were removed from Fort Asshole, then we might reassign the value
-						of Fort Asshole to be 1. (follow link)
-					</aside>
-				</section>
-
 				<!-- Variables: Strings -->
 
 				<section>
@@ -858,58 +932,6 @@ var bookAuthor = "Ryan North";</code></pre>
 						but in this case, I had extracted the title of the book and the author
 						of the book for the sake of example. Either way, typically when a string
 						is created by a program, it's surrounded by quote marks.
-				</section>
-
-				<!-- Variables: Numbers can be manipulated like numbers, strings are complicated. -->
-
-				<section>
-					<h2>Variable Ability #2</h2>
-					<p><strong class="blue">Number variables</strong> can be manipulated, <br>just like the numbers they represent.
-					<strong class="blue">String variables</strong>, however, can only be mashed together.</p>
-
-					<p class="right-align" style="padding-right: 50px;">
-						<a href="https://repl.it/CX4Z/1" target="_blank">(repl.it example)</a>
-					</p>
-
-					<aside class="notes">
-						Which leads us to variable ability number two — you can run calculations
-						with number variables as if they were numbers, but with basic operations,
-						strings can only be mashed together. And now, a demonstration.
-
-						With the variables we gathered earlier from the webpage, we could take
-						bookPrice and bookDiscount to calculated the bookDiscountedPrice, then
-						even create an order total.
-
-						If we then wanted to, say, get rid of the subtitle in the title, and
-						tried to do the obvious thing (subtracting the appropriate part of the string),
-						we run into a problem. NaN. Which is the computer's way of complaining that you're
-						trying to manipulate something that's clearly not a number like a number.
-					</aside>
-
-				</section>
-
-				<!-- Variables: Numbers can be manipulated like numbers, strings are complicated, illustrated -->
-
-				<section>
-					<h2>Variable Ability #2</h2>
-					<div class="halfblock fragment" style="width: 48%; margin-right: 2%;">
-						<img style="width: 100%;" src="img/slide-images/thumbsup.gif" alt="Brent Rambo looking away from a computer and giving a thumbs up." />
-						<p class="small">
-							<i>Computers on numbers.</i>
-						</p>
-					</div>
-					<div class="halfblock fragment" style="width: 48%; margin-right: 0%;">
-						<img style="width: 100%;" src="img/slide-images/tinagroan.gif" alt="Brent Rambo looking away from a computer and giving a thumbs up." />
-						<p class="small">
-							<i>Computers on strings.</i>
-						</p>
-					</div>
-					<aside class="notes">
-						Numbers are computers' jam, but strings are a smidge too abstract for computers.
-						It's possible to remove text from strings, but specialized instructions are required
-						to find and then manipulate individual sections of text as if they were alphabet
-						blocks.
-					</aside>
 				</section>
 
 				<!-- Variables: Numbers as Strings -->
@@ -970,6 +992,97 @@ var primeMember = false;</code></pre>
 					</aside>
 				</section>
 
+				<!-- Variables: Variables are mutable -->
+
+				<section>
+					<h2>Variable Ability #1</h2>
+					<p>The value of variables can be updated over the course of a program.</p>
+				</section>
+
+				<!-- Variables: Variables are mutable (example) -->
+
+				<section>
+					<div>
+						<h2>Variable Ability #1</h2>
+						<img src="img/slide-images/kittyvillage.jpg" alt="A picture of two cats fighting in a box." />
+					</div>
+					<aside class="notes">
+						Like we learned earlier, variables are storage containers... (advance
+						slide) ... much like this box is a container for cats. (advance slide)
+					</aside>
+				</section>
+
+				<section>
+						<h2>Variable Ability #1</h2>
+						<pre><code contenteditable class ="javascript">var kittyVillagePopulation = 1;
+console.log(kittyVillagePopulation);
+kittyVillagePopulation = 0;
+console.log(kittyVillagePopulation);</code></pre>
+						<p class="right-align" style="padding-right: 50px;">
+							<a href="https://repl.it/CX3X" target="_blank">(repl.it)</a>
+						</p>
+					<aside class="notes">
+						If we were to take a census of Kitty Village, we might declare the variable
+						kittyVillagePopulation is declared and then assign it the value of 1.
+						If the cat were removed from Kitty Village, then we might reassign the value
+						of Kitty Village to be 0. (follow link)
+					</aside>
+				</section>
+
+
+				<!-- Variables: Numbers can be manipulated like numbers, strings are complicated. -->
+
+				<section>
+					<h2>Variable Ability #2</h2>
+					<p><strong class="blue">Number variables</strong> can be manipulated, <br>just like the numbers they represent.
+					<strong class="blue">String variables</strong>, however, can only be mashed together.</p>
+
+					<p class="right-align" style="padding-right: 50px;">
+						<a href="https://repl.it/CX4Z/1" target="_blank">(repl.it example)</a>
+					</p>
+
+					<aside class="notes">
+						Which leads us to variable ability number two — you can run calculations
+						with number variables as if they were numbers, but with basic operations,
+						strings can only be mashed together. And now, a demonstration.
+
+						With the variables we gathered earlier from the webpage, we could take
+						bookPrice and bookDiscount to calculated the bookDiscountedPrice, then
+						even create an order total.
+
+						If we then wanted to, say, get rid of the subtitle in the title, and
+						tried to do the obvious thing (subtracting the appropriate part of the string),
+						we run into a problem. NaN. Which is the computer's way of complaining that you're
+						trying to manipulate something that's clearly not a number like a number.
+					</aside>
+
+				</section>
+
+				<!-- Variables: Numbers can be manipulated like numbers, strings are complicated, illustrated -->
+
+				<section>
+					<h2>Variable Ability #2</h2>
+					<div class="halfblock fragment" style="width: 48%; margin-right: 2%;">
+						<img style="width: 100%;" src="img/slide-images/thumbsup.gif" alt="Brent Rambo looking away from a computer and giving a thumbs up." />
+						<p class="small">
+							<i>Computers on numbers.</i>
+						</p>
+					</div>
+					<div class="halfblock fragment" style="width: 48%; margin-right: 0%;">
+						<img style="width: 100%;" src="img/slide-images/tinagroan.gif" alt="Brent Rambo looking away from a computer and giving a thumbs up." />
+						<p class="small">
+							<i>Computers on strings.</i>
+						</p>
+					</div>
+					<aside class="notes">
+						Numbers are computers' jam, but strings are a smidge too abstract for computers.
+						It's possible to remove text from strings, but specialized instructions are required
+						to find and then manipulate individual sections of text as if they were alphabet
+						blocks.
+					</aside>
+				</section>
+
+
 				<!-- Logical Structures -->
 
 				<section>
@@ -991,7 +1104,7 @@ var primeMember = false;</code></pre>
 
               <div class="halfblock">
                 <ul class="small">
-                  <li>== (equal to)</li>
+                  <li>== (equal to**)</li>
                   <li>> (greater than)</li>
                   <li>&lt; (less than)</li>
                   <li>>= (greater than or equal to)</li>
@@ -1023,6 +1136,7 @@ var primeMember = false;</code></pre>
 							</aside>
 				</section>
 
+				<!-- TODO: Note that the bit between the parenthesis is referred to as an argument. -->
 
 				<section>
 					<h2>Let's Talk To Computers:<br>If/Else Statements</h2>
@@ -1040,9 +1154,8 @@ var primeMember = false;</code></pre>
 				<section>
 					<h2>Let's Try If/Else!</h2>
           <ul>
-            <li>For this excercise, we're using <strong class="blue">Ruby</strong>.</li>
-            <li>Go to <a href="http://repl.it/languages" target="_blank">repl.it,</a> which is an online terminal to practice writing code.</li>
-            <li>Choose 'Ruby'.</li>
+            <li>For this exercise, we're using <strong class="blue">Ruby</strong>.</li>
+            <li>We're going to pop over to <a href="https://repl.it/CXlG" target="_blank">repl.it,</a> which is an online terminal to practice writing code.</li>
           </ul>
 				</section>
 
@@ -1087,40 +1200,55 @@ end</code></pre>
 							Loops are great at doing repetitive tasks and reducing the amount
 							of code that you need to write. Depending on what you're doing, you
 							could have hundreds of lines of code using if/then/else, or you could
-							write a simple loop statement.
+							write a simple loop statement. For example... imagine Oprah
+							was a computer.
 						</aside>
 					</section>
+
 					<section>
 						<h2>Why Use Loops?</h2>
 
 						<pre><code contenteditable class="python">print('You get a car!')
-# ... 275 lines later...
 print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')</code></pre>
+						<aside class="notes">
+							When it came time to distribute her favorite things, she could
+							print "You get a car!" 276 times for each member of her studio
+							audience.
+						</aside>
+					</section>
 
-# Alternatively...
-number_of_cars = 276
+					<section>
+						<h2>Why Use Loops?</h2>
+
+						<pre><code contenteditable class="python">number_of_cars = 276
 
 while number_of_cars > 0:
 	print('You get a car!')
 	number_of_cars = number_of_cars - 1
 </code></pre>
 						<aside class="notes">
-							If Oprah were a computer, she could say, "You get a car! And you get
-							a car! And you get a car!" 276 times for each member of her studio
-							audience... or she could rapidly loop through the entire studio audience.
+							.. or she could rapidly loop through the entire studio audience.
 							to do the same thing.
 						</aside>
 					</section>
-				<section data-background="img/slide-images/bees.gif">
-					<aside class="notes">
-						It's as if you were distributing bees and not cars.
-					</aside>
-				</section>
 
         <section>
           <h2>Let's Do Some Loops!</h2>
           <ul>
-            <li>For this excercise, we're using <strong class="blue">Python</strong>.</li>
+            <li>For this exercise, we're using <strong class="blue">Python</strong>.</li>
             <li>Go to <a href="http://repl.it/languages" target="_blank">repl.it,</a> which is an online terminal to practice writing code.</li>
             <li>Choose 'Python'.</li>
           </ul>
@@ -1242,12 +1370,19 @@ print('Out of papers! Go home!')</code></pre>
 			</section>
 
 			<section>
+				<img src="img/slide-images/ifdog.jpg" alt="A dog being placed into a garbage can upon ambiguous request by signage." />
+			</section>
+
+			<section>
+				<img src="img/slide-images/loopcomic.jpg" alt="A kid trying to get around writing a phrase on the chalkboard 100 times.." />
+			</section>
+
+			<section>
 				<h3 class="blue left-align" style="line-height: 1.2;">
-					The programmer shows up at the grocery store every day to buy shampoo.
-					A cashier's been present for many of these trips and ultimately gives
-					into curiosity and asks, "Why do you buy shampoo so often?"
+					A computer programmer rushes his wife to the hospital where she gives birth to their child. The doctor first hands the baby to the programmer.
 				</h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">The programmer replies, "I was only following the directions. Lather, rinse, repeat."</h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">"Well?" his wife says impatiently. "Is it a boy, or is it a girl?"<h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">Smiling tearfully, the programmer replies, "Yes.</h3>
 			</section>
 
 				<section>
