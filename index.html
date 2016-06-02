@@ -73,18 +73,6 @@
 					* Have fun!
 				</section>
 
-				<!-- Welcome (Important to Remember) -->
-
-				<section>
-					<img src="img/slide-images/confuseddog.jpg" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
-				</section>
-
-				<section>
-					<img src="img/slide-images/jake-the-dog.jpg" style="height: 50vh" alt="Jake the Dog from Adventure Time, being encouraging!">
-					<blockquote>Sucking at something is the first step to being sorta good at something.</blockquote>
-					<p><small>&mdash; Jake the Dog</small></p>
-				</section>
-
 				<!-- Welcome (Getting to Know You) -->
 				<section data-markdown>
 					##Getting to Know You
@@ -102,10 +90,6 @@
 						<li class="fragment">They allow us to buy stuff anywhere!</li>
 						<li class="fragment">They help us communicate!</li>
 					</ul>
-
-					<aside class="notes">
-<!-- TODO: Write a monologue up here. -->
-					</aside>
 				</section>
 
 				<!-- SEGUE: The History of Computing -->
@@ -982,7 +966,7 @@ var primeMember = false;</code></pre>
 					<aside class="notes">
 						So some of the Amazon examples could include the user's logged-in
 						state or Amazon Prime status. Generally, booleans are used to state
-						whether a given condition is true or false.
+						whether a given condition is true or false. Speaking of which...
 					</aside>
 				</section>
 
@@ -993,13 +977,16 @@ var primeMember = false;</code></pre>
 					<p>Once you have your data in the program, <br>you can manipulate it!</p>
 					<p class="fragment">Logical structures provide the basis <br>for doing things with that data.</p>
 					<aside class="notes">
-						If you understand the concepts, you can learn how to represent them in most programming languages.
+						Logical structures! Logical structures allow you to determine what
+						actions are taken with what data. If you understand the concepts,
+						you can learn how to represent them in most programming languages.
 					</aside>
 				</section>
 
 				<section>
 					<h2>Let's Talk To Computers: Operators</h2>
-            <p class="left-align small">Operators are words or symbols that let you <strong class="blue">compare, combine, or evaluate</strong> something to produce an output.</p>
+            <p class="left-align small">Operators are words or symbols that let you
+							<strong class="blue">compare, combine, or evaluate</strong> something to produce an output.</p>
 						<p class="left-align small"><strong class="green">A few examples:</strong></p>
 
               <div class="halfblock">
@@ -1018,6 +1005,22 @@ var primeMember = false;</code></pre>
                   <li>or</li>
                 </ul>
               </div>
+
+							<aside class="notes">
+								In order to articulate conditions, we need the help of operators, which are
+								words and symbols that let you compare, combine, or evaluate something
+								to produce an output. Some are once again familiar from math class, with
+								greater than, greater than or equal to, less than, and less than or equal
+								to. But the double equals sign is a little different — any guesses as to why?
+
+								...
+
+								Yup. In programming languages, a single equal sign is used to assign values
+								while a double equal sign is used to determine if two values are equivalent.
+								Additionally, the exclamation point in front of an equal sign is the programming
+								equivalent of not equal to. "And" will run code if both listed conditions are true,
+								and "or" will evaluate to true if one condition is true. Let's try them out!
+							</aside>
 				</section>
 
 
@@ -1070,8 +1073,6 @@ end</code></pre>
 					</ul>
 				</section>
 
-<!-- TODO: Format all slides past this point. -->
-
 				<section>
 					<h2>Let's Talk To Computers: Loops</h2>
 					<p>A loop is a <strong class="blue">set of instructions that repeats</strong><br/>until a certain condition is reached.</p>
@@ -1083,8 +1084,10 @@ end</code></pre>
 							<p>Loops are awesome at doing repetitive tasks and reducing the amount of code you need to write.</p>
 
 						<aside class="notes">
-							Depending on what you're doing, you could have hundreds of lines of
-							code using if/then/else, or you could write a simple loop statement.
+							Loops are great at doing repetitive tasks and reducing the amount
+							of code that you need to write. Depending on what you're doing, you
+							could have hundreds of lines of code using if/then/else, or you could
+							write a simple loop statement.
 						</aside>
 					</section>
 					<section>
@@ -1101,7 +1104,6 @@ while number_of_cars > 0:
 	print('You get a car!')
 	number_of_cars = number_of_cars - 1
 </code></pre>
-
 						<aside class="notes">
 							If Oprah were a computer, she could say, "You get a car! And you get
 							a car! And you get a car!" 276 times for each member of her studio
@@ -1114,7 +1116,6 @@ while number_of_cars > 0:
 						It's as if you were distributing bees and not cars.
 					</aside>
 				</section>
-
 
         <section>
           <h2>Let's Do Some Loops!</h2>
@@ -1129,11 +1130,14 @@ while number_of_cars > 0:
           <h2>Let's Do Some Loops!</h2>
           <pre><code contenteditable class="python">papers_to_deliver = 65
 while papers_to_deliver > 0:
-    print papers_to_deliver
+    print(papers_to_deliver)
     papers_to_deliver = papers_to_deliver - 1
 
-print 'Out of papers! Go home!';</code></pre>
-          <ul class="small">
+print('Out of papers! Go home!')</code></pre>
+					<p class="right-align" style="padding-right: 50px;">
+						<a href="https://repl.it/CXa9/2" target="_blank">(repl.it)</a>
+					</p>
+          <ul class="small fragment">
             <li><strong>Change the numbers</strong> to see what happens</li>
             <li><strong>Change the operators</strong> (greater than, less than, etc.)</li>
             <li><strong>Change the string</strong> statements</li>
@@ -1141,22 +1145,33 @@ print 'Out of papers! Go home!';</code></pre>
 
 					<aside class="notes">
 						Has anyone here played the game Paperboy? Delivering newspapers to subscribers
-						while attempting to avoid death and hitting sweet ramps on business levels?
+						while attempting to avoid death and hitting sweet ramps on bonus levels? Well,
+						this loop is for you. Does anyone want to hazard describing what would happen
+						in this chunk of code?
 					</aside>
         </section>
 
         <section> <!-- Slide 34 -->
-          <div class="box-large fragment">
-            <img style="border: none;" src="img/slide-images/loop-illustration.png" />
-          </div>
+          <img style="border: none;" src="img/slide-images/loop-illustration.png" />
+					<aside class="notes">
+						Here's a diagram that runs through the logic of a loop. (Read through
+						diagram)
+					</aside>
         </section>
 
         <section> <!-- Slide 35 -->
-          <h2>WHILE Loop Examples</h2>
+          <h2>While Loop Examples</h2>
           <ul>
-            <li>Amazon or eBay: "WHILE" it's today, display the daily deals.</li>
-            <li>Amazon Cart: "WHILE" it's this book, display the book's image, title, price, etc.</li>
+            <li><strong class="blue">Amazon</strong>: "WHILE" it's today, display the daily deals.</li>
+            <li><strong class="blue">Amazon</strong>: "WHILE" a book is selected, display the book's cover, title, price, etc.</li>
           </ul>
+					<aside class="notes">
+						Back to Amazon, some examples for how loops might be used are the following —
+						the current date and time could be used as a condition to determine what
+						daily deals should be displayed. Also, when searching for a particular item,
+						the search results could run through a loop where while an item is in a list
+						to display its cover image, title, and price.
+					</aside>
         </section>
 
         <section> <!-- Slide 36 -->
@@ -1169,22 +1184,24 @@ print 'Out of papers! Go home!';</code></pre>
               </ul>
 
 							<aside class="notes">
-								An infinite loop is a loop that will never meet the condition to stop.
-								As we alluded to earlier, computers do exactly what you ask hem
-								It will keep going until it's used up all your computer's (or server's)
-								memory (RAM). This is bad!
+								If you're not careful, it's possible to write a loop that won't ever
+								find its way to its stop condition. These are infinite loops, and they
+								are bad news bears. As we alluded to earlier, computers do exactly what you ask them.
 							</aside>
         </section>
 
         <section data-background="img/slide-images/trapped-in-loop.gif">
 					<aside class="notes">
-						Your computer's abject feeling of defeat will not be unlike this cat's.
+						Thusly, they'll keep going until they've used up all their (or their server's)
+						memory (RAM). Your computer's abject feeling of defeat will not be unlike this cat's.
+						Usually, this will just force you to introduce the end condition of closing your browser,
+						but an infinite loop will stop any program in its tracks.
 					</aside>
         </section>
 
 <!-- TODO: Let's write a simple program? Maaaaaybe? -->
 
-      <section>
+      <!-- <section>
         <h2>How This Plays into a Project</h2>
         <p>When companies implement a new program,<br/>they take various things into consideration:</p>
         <ol>
@@ -1201,7 +1218,7 @@ print 'Out of papers! Go home!';</code></pre>
             <li>Loops: Instructions that keeps repeating as neccessary.</li>
           </ul>
         </ol>
-      </section>
+      </section> -->
 
 			<section>
 				<h2>Wrapping up...</h2>
@@ -1226,39 +1243,71 @@ print 'Out of papers! Go home!';</code></pre>
 
 			<section>
 				<h3 class="blue left-align" style="line-height: 1.2;">
-					A programmer's partner sends them to go pick up some groceries, asking
-					them to get a loaf of bread, and, if there are eggs, to get twelve.
+					The programmer shows up at the grocery store every day to buy shampoo.
+					A cashier's been present for many of these trips and ultimately gives
+					into curiosity and asks, "Why do you buy shampoo so often?"
 				</h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">The programmer returns with twelve loaves of bread.</h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">The programmer replies, "I was only following the directions. Lather, rinse, repeat."</h3>
 			</section>
 
+				<section>
+					<h1>What now?</h1>
+				</section>
 
-
-
-
-
-
-<!-- TODO: Next Steps -->
+				<section>
+					<h2>Next Steps</h2>
+					<ul>
+						<li class="fragment">Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/231173135/" target="_blank">Intro to JavaScript</a> next week!</li>
+						<li class="fragment">Explore some online learning tools!</li>
+					</ul>
+				</section>
 
         <section>
-          <h2>Online Resources &amp; Books</h2>
+          <h2>Next Steps: Online Resources &amp; Books</h2>
           <!-- most of these are free -->
           <ul>
             <li>Codecademy: <a href="http://www.codecademy.com" target="_blank">www.codecademy.com</a></li>
             <li>Coursera: <a href="https://www.coursera.org" target="_blank">www.coursera.org</a></li>
-						<li>Lynda (free with a Cincinnati Public Library Membership!): <a href="http://www.lynda.com" target="_blank">https://www.lynda.com</a></li>
+						<li>Lynda (free with a CPL Membership!): <a href="http://www.lynda.com" target="_blank">https://www.lynda.com</a></li>
             <li>Khan Academy: <a href="https://www.khanacademy.org" target="_blank">www.khanacademy.org</a></li>
             <li>Skillcrush: <a href="http://skillcrush.com" target="_blank">www.skillcrush.com</a></li>
             <li>Udacity: <a href="https://www.udacity.com" target="_blank">www.udacity.com</a></li>
             <li>Udemy: <a href="https://www.udemy.com" target="_blank">www.udemy.com</a></li>
             <li>And of course, <a href="http://www.girldevelopit.com/chapters/cincinnati" target="_blank">GDI Cincinnati!</a></li>
-            <li> <a href="http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360" target="_blank">Learn to Program</a>, by Chris Pine</li>
-            <li> <a href="http://www.amazon.com/Everyday-Scripting-Ruby-Teams-Testers/dp/0977616614/ref=sr_1_1?s=books&ie=UTF8&qid=1405369294&sr=1-1&keywords=everyday+scripting+with+ruby" target="_blank">Everyday Scripting in Ruby</a>, by Brian Marick</li>
+            <li> <a href="http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360" target="_blank">Learn to Program</a> by Chris Pine</li>
+            <li> <a href="http://www.amazon.com/Everyday-Scripting-Ruby-Teams-Testers/dp/0977616614/ref=sr_1_1?s=books&ie=UTF8&qid=1405369294&sr=1-1&keywords=everyday+scripting+with+ruby" target="_blank">Everyday Scripting in Ruby</a> by Brian Marick</li>
           </ul>
         </section>
 
 				<section>
-					<h2>Get Connected!</h2>
+					<h2>Next Steps</h2>
+					<ul>
+						<li>Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/231173135/" target="_blank">Intro to JavaScript</a> next week!</li>
+						<li>Explore some online learning tools!</li>
+						<li class="fragment">Connect with us on Slack!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Next Steps: GDI Cincy Slack</h2>
+					<img src="img/slide-images/slack.png" style="height: 150px;" alt="Slack logo" />
+					<p>
+						Join the <a href="http://gdicincy.slack.com/signup" target="_blank">GDI Cincy Slack channel</a> to stay in touch and hit us up with any questions!
+					</p>
+				</section>
+
+				<section>
+					<h2>Next Steps</h2>
+					<ul>
+						<li>Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/231173135/" target="_blank">Intro to JavaScript</a> next week!</li>
+						<li>Explore some online learning tools!</li>
+						<li>Connect with us on Slack!</li>
+						<li class="fragment">Get into the community!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Next Steps: Get Connected!</h2>
 					<ul>
 						<li><a href="http://www.meetup.com/Cincinnati-Web-Tech-Study-Group/" target="_blank">Cincinnati Web-Tech Study Group</a></li>
 						<li><a href="http://www.meetup.com/WWCode-Cincinnati/" target="_blank">Women Who Code Cincinnati</a></li>
@@ -1266,12 +1315,68 @@ print 'Out of papers! Go home!';</code></pre>
 						<li><a href="http://www.meetup.com/Cincinnati-Web-Tech-Study-Group/" target="_blank">Cincy Py</a></li>
 						<li><a href="http://www.cincyrb.com" target="_blank">Cincy.rb</a></li>
 					</ul>
-					<p>
-						Join the <a href="http://gdicincy.slack.com/signup" target="_blank">GDI Cincy Slack channel</a> to stay in touch and hit us up with any questions!
-					</p>
-
 				</section>
 
+				<section>
+					<h1>Wrapping up, remember the following:</h1>
+				</section>
+
+				<section>
+					<img src="img/slide-images/confuseddog.jpg" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<aside class="notes">
+						While I hope that you feel like you've got a pretty good handle on
+						the basics and larger concepts of programming, the learning curve
+						is an intimidating bugger, and there will come a time where you
+						look at the code before you and say... 'Ehhhh—?'
+					</aside>
+				</section>
+
+				<section>
+					<img src="img/slide-images/jake-the-dog.jpg" style="height: 50vh" alt="Jake the Dog from Adventure Time, being encouraging!">
+					<blockquote>Sucking at something is the first step to being sorta good at something.</blockquote>
+					<p><small>&mdash; Jake the Dog</small></p>
+
+					<aside class="notes">
+						But as discouraged as you might feel at that time, remember the words of
+						another dog, and keep at it.
+					</aside>
+				</section>
+
+				<section>
+					<img src="img/slide-images/moss-rage.gif" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<aside class="notes">
+						There will be moments like this. Very frequently. But if you keep at
+						it...
+					</aside>
+				</section>
+
+				<section>
+					<img src="img/slide-images/iamgod.gif" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<aside class="notes">
+						There will also be moments like this. So stay on the path, and don't
+						be afraid to pick our brains, because we want you to be awesome and
+						successful!
+					</aside>
+				</section>
+
+				<section>
+					<h2>Any questions? <span>Comments?</span></h2>
+				</section>
+
+				<section>
+					<h1>Happy Coding!</h1>
+				</section>
+
+				<section>
+					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder" style="height: 50vh;"/>
+					<h1>Intro to Programming Concepts</h1>
+					<p>
+						<small>Brought to you by <a href="www.girldevelopit.com/chapters/cincinnati">Girl Develop It Cincinnati</a> | <a href="http://www.twitter.com/gdicincinnati">@GDICincinnati</a></small>
+					</p>
+					<p>
+						<small>Presented by Lauren Woodrick | <a href="http://www.twitter.com/loremipsam" target="_blank">@LoremIpsam</a></small>
+					</p>
+				</section>
 
 <!-- All Content Goes Here -->
 
