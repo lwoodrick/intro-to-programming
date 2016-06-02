@@ -251,6 +251,14 @@
 
 				<section>
 					<h1>How Do Computers Do Their Thinking?</h1>
+				</section>
+
+				<section>
+					<h2>How Computers Think</h2>
+					<p>
+						Computers have three types of memory &mdash; <strong class="blue">Read-Only Memory</strong>,
+						<strong class="blue">Hard Drive Memory</strong>, and <strong class="blue">Random Access Memory</strong>.
+					</p>
 
 					<aside class="notes">
 						... once digital computers arrived, the base on which computers did
@@ -362,16 +370,12 @@
 							<strong class="blue">RAM</strong>, or <strong class="blue">Random Access Memory</strong>
 							is volatile memory that handles data that the computer is actively using.
 						</p>
-						<img class="fragment" src="img/slide-images/RAM.png" alt="A diagram of the process of RAM encoding.">
 
 						<aside class="notes">
 							... is volatile — the data it grapples with isn’t ‘written’
-							anywhere, just temporarily stored on a series of capacitors that are electrified
-							to hold bits of data as zeros and ones, “on" representing one, “off" representing
-							zero. These capacitors deal with what you’re actively working on on the computer —
-							whether that’s data that has yet to be saved, or your computer reading something
-							from the hard drive. The more capacitors you have, the more your computer
-							is able to do at once.
+							anywhere, just temporarily stored on a series of electrified capacitors.
+							The more capacitors there are dedicated to this purpose, the more a computer
+							can do at once.
 
 							Has anyone had their computer crash and lost hours worth of work before?
 						</aside>
@@ -417,6 +421,15 @@
 							choice to memorize that phone number. Meanwhile, Tommy Tutone has ensured that
 							most people of a certain age remember Jenny’s phone number.
 						</aside>
+					</section>
+
+					<section>
+						<h2>How Computers Think: A Review</h2>
+						<ul>
+							<li><strong class="blue">ROM</strong>handles data that's essential for device operation</li>
+							<li><strong class="blue">Hard Drive</strong> handles hardwritten, saved data.</li>
+							<li><strong class="blue">RAM</strong> handles data your computer is using.</li>
+						</ul>
 					</section>
 
 
@@ -790,12 +803,20 @@ STOP RUN.</code></pre>
 
 						(DEMO)
 
+					</aside>
+				</section>
+
+				<section>
+					<h1>How To Talk To Computers: <br>A Demo</h1>
+
+					<img src="img/slide-images/indecisive.gif" alt="Fred Armisen panicking and being indecisive." />
+
+					<aside class="notes">
 						As you can see, it's... not exactly that easy. While programming languages
 						look fairly similar to English, they're pretty particular about the way
 						that you relay instructions to them and aren't able to make assumptions
 						about what steps are necessary ahead of an action unless they're told
 						explicitly to them.
-
 					</aside>
 				</section>
 
@@ -803,7 +824,6 @@ STOP RUN.</code></pre>
 
 				<section>
 					<h1>Let's Talk To Computers!</h1>
-
 					<aside class="notes">
 						So, all that being said... it is now time to get computers to do our bidding.
 					</aside>
@@ -958,7 +978,7 @@ var bookAuthor = "Ryan North";</code></pre>
 					<h2>Variable Types: <br>Numbers as Strings</h2>
 					<p>You can store numbers as a string variables too!</p>
 					<p>This is best used for numbers that aren't/shouldn't be used in mathematical
-					equations.</p>
+					equations. Numbers can also become part of strings if directly added to them.</p>
 
 					<pre class="fragment"><code contenteditable class ="javascript">var jennysNumber = "8675309";</code></pre>
 
@@ -1181,6 +1201,8 @@ console.log(kittyVillagePopulation);</code></pre>
 							</aside>
 				</section>
 
+				<!-- TODO: Write one of each and have them guess how each one will evaluate. -->
+
 				<!-- TODO: Note that the bit between the parenthesis is referred to as an argument. -->
 
 				<section>
@@ -1229,6 +1251,15 @@ end</code></pre>
 					<ul class="small">
 						<li><strong class="blue">Manipulate the elements</strong> to see what happens.</li>
 					</ul>
+				</section>
+
+<!-- Indentation -->
+
+				<section>
+					<h2>Interlude: What's all this white space?</h2>
+					<p>One nice thing about some newer languages is that it looks similar to writing English.</p>
+					<p>However, when dispensing with punctuation, the computer substitutes indentation to make that
+					actions execute correctly and in the right order.</p>
 				</section>
 
 				<section>
@@ -1525,7 +1556,7 @@ print('Out of papers! Go home!')</code></pre>
 				</section>
 
 				<section>
-					<img src="img/slide-images/iamgod.gif" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<img src="img/slide-images/skateaway.gif" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
 					<aside class="notes">
 						There will also be moments like this. So stay on the path, and don't
 						be afraid to pick our brains, because we want you to be awesome and
