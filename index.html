@@ -817,12 +817,30 @@ STOP RUN.</code></pre>
 						<strong class="fragment highlight-blue">Variables</strong>,
 						<strong class="fragment highlight-blue">Conditionals</strong>, and
 						<strong class="fragment highlight-blue">Loops</strong>!
+				</section>
 
-						<aside class="notes">
-						  (Read Slide). As I alluded to earlier, we'll be sampling from Ruby, Python,
-							and JavaScript, but for this initial portion, we'll be using JavaScript, which
-							Taylor is going to be running the Intro class for next Wednesday.
-						</aside>
+				<!-- Let's meet the console. -->
+
+				<section>
+					<h2>Let's Meet the Terminal!</h2>
+					<p>
+						The <strong class="blue">terminal</strong> is a space where we
+						run chunks of code and test them to make sure that it's behaving in
+						the way we want it to.
+					</p>
+					<p>
+						For this course, we'll be making use of an online terminal named <a href="https://repl.it">repl.it</a>.
+					</p>
+
+					<aside class="notes">
+						But before we get started, let's meet the terminal! The terminal is
+						a space where we can run chunks of code and test them to make sure
+						that it's behaving predictably.
+
+						As I alluded to earlier, we'll be sampling from Ruby, Python, and JavaScript,
+						but for this initial portion, we'll be using JavaScript, which
+						Taylor is going to be running the Intro class for next Wednesday.
+					</aside>
 				</section>
 
 				<!-- Variables -->
@@ -1024,8 +1042,23 @@ console.log(kittyVillagePopulation);</code></pre>
 					<aside class="notes">
 						If we were to take a census of Kitty Village, we might declare the variable
 						kittyVillagePopulation is declared and then assign it the value of 1.
-						If the cat were removed from Kitty Village, then we might reassign the value
-						of Kitty Village to be 0. (follow link)
+						If the rather irritated cat removed itself from Kitty Village, then we
+						might reassign the value of Kitty Village to be 0. (follow link)
+					</aside>
+				</section>
+
+				<!-- Interlude: What's the deal with console.log? -->
+
+				<section>
+					<h2>Interlude: What's this "console.log"?</h2>
+					<p>Not every change in your code is going to be reflected on-screen</p>
+					<p>One way to make sure everything is behaving correctly is to <strong class="blue">log to the console</strong>.</p>
+
+					<aside class="notes">
+						(Read slide.) This was demonstrated in the previous chunk to show
+						that the value of kittyVillagePopulation was indeed being changed.
+						console.log is used for this purpose in JavaScript, while you see print
+						used for the same purpose in Python and Ruby.
 					</aside>
 				</section>
 
@@ -1042,7 +1075,7 @@ console.log(kittyVillagePopulation);</code></pre>
 					</p>
 
 					<aside class="notes">
-						Which leads us to variable ability number two — you can run calculations
+					 	Now, variable ability number two — you can run calculations
 						with number variables as if they were numbers, but with basic operations,
 						strings can only be mashed together. And now, a demonstration.
 
@@ -1082,6 +1115,16 @@ console.log(kittyVillagePopulation);</code></pre>
 					</aside>
 				</section>
 
+				<section>
+					<h1>Before we move on, a variable mini-quiz!</h1>
+				</section>
+
+				<section data-background="img/slide-images/amazonsample.jpg">
+					<aside class="notes">
+						(Run through colors and ask what type of variable might
+						be involved with each chunk.)
+					</aside>
+				</section>
 
 				<!-- Logical Structures -->
 
@@ -1099,7 +1142,7 @@ console.log(kittyVillagePopulation);</code></pre>
 				<section>
 					<h2>Let's Talk To Computers: Operators</h2>
             <p class="left-align small">Operators are words or symbols that let you
-							<strong class="blue">compare, combine, or evaluate</strong> something to produce an output.</p>
+							<strong class="blue">compare or evaluate</strong> something to produce an output.</p>
 						<p class="left-align small"><strong class="green">A few examples:</strong></p>
 
               <div class="halfblock">
@@ -1118,21 +1161,23 @@ console.log(kittyVillagePopulation);</code></pre>
                   <li>or</li>
                 </ul>
               </div>
+							<p class="left-align small fragment" style="color: #aaa;">
+								** "Equal to" is a double equal sign because a single equal sign is reserved in the language for making variable assignments.
+							</p>
 
 							<aside class="notes">
 								In order to articulate conditions, we need the help of operators, which are
-								words and symbols that let you compare, combine, or evaluate something
-								to produce an output. Some are once again familiar from math class, with
-								greater than, greater than or equal to, less than, and less than or equal
-								to. But the double equals sign is a little different — any guesses as to why?
+								words and symbols that let you compare or evaluate something
+								to produce an output. Some of these are once again familiar from math class,
+								But the double equals sign is a little different — any guesses as to why?
 
-								...
+								... (advance slide)
 
 								Yup. In programming languages, a single equal sign is used to assign values
 								while a double equal sign is used to determine if two values are equivalent.
 								Additionally, the exclamation point in front of an equal sign is the programming
 								equivalent of not equal to. "And" will run code if both listed conditions are true,
-								and "or" will evaluate to true if one condition is true. Let's try them out!
+								"or" will evaluate to true if one condition is true. Let's try them out!
 							</aside>
 				</section>
 
@@ -1155,7 +1200,7 @@ console.log(kittyVillagePopulation);</code></pre>
 					<h2>Let's Try If/Else!</h2>
           <ul>
             <li>For this exercise, we're using <strong class="blue">Ruby</strong>.</li>
-            <li>We're going to pop over to <a href="https://repl.it/CXlG" target="_blank">repl.it,</a> which is an online terminal to practice writing code.</li>
+            <li>We're going to pop over to <a href="https://repl.it/CXlG" target="_blank">repl.it</a>.</li>
           </ul>
 				</section>
 
@@ -1187,9 +1232,24 @@ end</code></pre>
 				</section>
 
 				<section>
+					<h1>And now, a break for one of those programming jokes...</h1>
+				</section>
+
+				<section>
+					<h3 class="blue left-align" style="line-height: 1.2;">
+						A programmer's partner sends them to go pick up some groceries, asking
+						them to get a loaf of bread, and, if there are eggs, to get twelve.
+					</h3>
+					<h3 class="fragment left-align" style="line-height: 1.2;">The programmer returns with twelve loaves of bread.</h3>
+				</section>
+
+				<section>
 					<h2>Let's Talk To Computers: Loops</h2>
 					<p>A loop is a <strong class="blue">set of instructions that repeats</strong><br/>until a certain condition is reached.</p>
 					<p class="fragment">Two kinds of loops are <b class="blue">For Loops</b> and <b class="blue">While Loops</b>.</p>
+					<aside class="notes">
+						(Read Slide) ... but we'll only be touching on while loops in this class.
+					</aside>
 				</section>
 
 					<section>
@@ -1240,7 +1300,7 @@ while number_of_cars > 0:
 	number_of_cars = number_of_cars - 1
 </code></pre>
 						<aside class="notes">
-							.. or she could rapidly loop through the entire studio audience.
+							... or she could rapidly loop through the entire studio audience.
 							to do the same thing.
 						</aside>
 					</section>
@@ -1249,8 +1309,7 @@ while number_of_cars > 0:
           <h2>Let's Do Some Loops!</h2>
           <ul>
             <li>For this exercise, we're using <strong class="blue">Python</strong>.</li>
-            <li>Go to <a href="http://repl.it/languages" target="_blank">repl.it,</a> which is an online terminal to practice writing code.</li>
-            <li>Choose 'Python'.</li>
+            <li>Go to <a href="https://repl.it/CXa9/2" target="_blank">repl.it</a>.</li>
           </ul>
         </section>
 
@@ -1279,7 +1338,9 @@ print('Out of papers! Go home!')</code></pre>
 					</aside>
         </section>
 
-        <section> <!-- Slide 34 -->
+
+<!-- Loop Logic -->
+        <section>
           <img style="border: none;" src="img/slide-images/loop-illustration.png" />
 					<aside class="notes">
 						Here's a diagram that runs through the logic of a loop. (Read through
@@ -1287,22 +1348,9 @@ print('Out of papers! Go home!')</code></pre>
 					</aside>
         </section>
 
-        <section> <!-- Slide 35 -->
-          <h2>While Loop Examples</h2>
-          <ul>
-            <li><strong class="blue">Amazon</strong>: "WHILE" it's today, display the daily deals.</li>
-            <li><strong class="blue">Amazon</strong>: "WHILE" a book is selected, display the book's cover, title, price, etc.</li>
-          </ul>
-					<aside class="notes">
-						Back to Amazon, some examples for how loops might be used are the following —
-						the current date and time could be used as a condition to determine what
-						daily deals should be displayed. Also, when searching for a particular item,
-						the search results could run through a loop where while an item is in a list
-						to display its cover image, title, and price.
-					</aside>
-        </section>
+<!-- Beware the Infinite Loop! -->
 
-        <section> <!-- Slide 36 -->
+        <section>
           <h2>Beware the Infinite Loop!</h2>
             <p>An <strong class="blue">infinite loop</strong> is a loop that will never meet the condition to stop.<br> It will keep going until it's used up all your computer's (or server's) memory (RAM). This is bad!</p>
             <p class="green">Example for our loop:</p>
@@ -1363,10 +1411,10 @@ print('Out of papers! Go home!')</code></pre>
 
 			<section>
 				<h3 class="blue left-align" style="line-height: 1.2;">
-					A programmer's partner sends them to go pick up some groceries, asking
-					them to get a loaf of bread, and, if there are eggs, to get twelve.
+					A computer programmer rushes his wife to the hospital where she gives birth to their child. The doctor first hands the baby to the programmer.
 				</h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">The programmer returns with twelve loaves of bread.</h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">"Well?" his wife says impatiently. "Is it a boy, or is it a girl?"<h3>
+				<h3 class="fragment left-align" style="line-height: 1.2;">Smiling tearfully, the programmer replies, "Yes.</h3>
 			</section>
 
 			<section>
@@ -1375,14 +1423,6 @@ print('Out of papers! Go home!')</code></pre>
 
 			<section>
 				<img src="img/slide-images/loopcomic.jpg" alt="A kid trying to get around writing a phrase on the chalkboard 100 times.." />
-			</section>
-
-			<section>
-				<h3 class="blue left-align" style="line-height: 1.2;">
-					A computer programmer rushes his wife to the hospital where she gives birth to their child. The doctor first hands the baby to the programmer.
-				</h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">"Well?" his wife says impatiently. "Is it a boy, or is it a girl?"<h3>
-				<h3 class="fragment left-align" style="line-height: 1.2;">Smiling tearfully, the programmer replies, "Yes.</h3>
 			</section>
 
 				<section>
@@ -1399,12 +1439,11 @@ print('Out of papers! Go home!')</code></pre>
 
         <section>
           <h2>Next Steps: Online Resources &amp; Books</h2>
-          <!-- most of these are free -->
           <ul>
             <li>Codecademy: <a href="http://www.codecademy.com" target="_blank">www.codecademy.com</a></li>
-            <li>Coursera: <a href="https://www.coursera.org" target="_blank">www.coursera.org</a></li>
+						<li>Khan Academy: <a href="https://www.khanacademy.org" target="_blank">www.khanacademy.org</a></li>
 						<li>Lynda (free with a CPL Membership!): <a href="http://www.lynda.com" target="_blank">https://www.lynda.com</a></li>
-            <li>Khan Academy: <a href="https://www.khanacademy.org" target="_blank">www.khanacademy.org</a></li>
+            <li>Coursera: <a href="https://www.coursera.org" target="_blank">www.coursera.org</a></li>
             <li>Skillcrush: <a href="http://skillcrush.com" target="_blank">www.skillcrush.com</a></li>
             <li>Udacity: <a href="https://www.udacity.com" target="_blank">www.udacity.com</a></li>
             <li>Udemy: <a href="https://www.udemy.com" target="_blank">www.udemy.com</a></li>
