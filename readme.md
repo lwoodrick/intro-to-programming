@@ -1,51 +1,31 @@
-> Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and add the specifics about your class below.
+# Intro to Programming Concepts
 
-# Add Your Course Title Here
+Slides and materials are hosted at [http://basics.gdicincy.com](http://basics.gdicincy.com).
 
-Slides and materials are hosted at [http://example.com/](http://example.com/).
+## Course Description
 
-## Course description
+Are you interested in learning the basics of how computers operate and how code works?  Have you ever taken a programming class and given up because the concepts were explained inadequately, or all the examples used math formulas and your walls went up? Or have you stayed away from programming all together, because you’re worried that’s what will happen? If you answered “Yes!” to any of those questions, this class is for you!
 
-Use this space for a short description of your course. We recommend using the description from your meetup event.
+In this workshop, we’ll explore some of the most basic and universal programming concepts. We’ll use everyday activities and real-life examples to demonstrate common structures such as If/Then/Else statements and different kinds of loops. We’ll also try to take the mystery out of variables, and we'll talk about why computers are so picky.
 
-**Cost:** 
+***Note:** This will truly be an introductory class. If you’ve taken GDI’s Intro to Javascript, Ruby, Python or any equivalent classes and successfully completed the exercises, this workshop is not for you. If you’re a programmer by profession, this workshop is not for you.*
 
-**Dates:** 
-
-**Location:** 
-
-A limited number of scholarships are available for those with a financial hardship. To apply, contact us at...
-
+**Cost:** $30
+**Duration:** 2.5 hours
 
 ### Prerequisites:
 
-List any prerequisites for this class, including any previous classes or the equivalent self-study or real-world skills.
-
-You should have:
-
-(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
-
-(b) built and managed websites on your own,
-
-**And also:**
-
-(a) taken intro to JavaScript through Girl Develop It, or
-
-(b) be familiar with syntax, arrays, conditionals, for and while loops, event handling, jQuery, AJAX requests, and handling JSON responses.
+- None whatsoever! Our goal is to get you started off on the right foot!
 
 
-### Tech requirements:
+### Tech Requirements:
 
  - Your laptop (Mac, PC, or Linux are all okay).
  - A modern web browser - either Chrome or Firefox with Firebug installed.
- - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
 
+### Topics Covered:
 
-### Topics covered:
-
- - The topics you plan to cover
- - Written in list form
- - Here's another one
-
-# intro-to-programming
-# intro-to-programming
+ - The History of Computing
+ - How Computers "Think"
+ - The Development of Programming Languages
+ - Variables, Conditionals, and Loops
