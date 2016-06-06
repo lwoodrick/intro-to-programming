@@ -1,4 +1,3 @@
-![Girl Develop It](img/circle-gdi-logo.png)
 # Intro to Programming Concepts
 
 Slides and materials are hosted at [http://basics.gdicincy.com](http://basics.gdicincy.com).
