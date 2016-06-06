@@ -1,4 +1,4 @@
-![Girl Develop It](img/circle-gdi-logo.png =250x)
+![Girl Develop It](img/circle-gdi-logo.png)
 # Intro to Programming Concepts
 
 Slides and materials are hosted at [http://basics.gdicincy.com](http://basics.gdicincy.com).
@@ -30,6 +30,8 @@ In this workshop, we’ll explore some of the most basic and universal programmi
  - How Computers "Think"
  - The Development of Programming Languages
  - Variables, Conditionals, and Loops
+
+
 
 ---
 
