@@ -1,3 +1,4 @@
+![Girl Develop It](img/circle-gdi-logo.png =250x)
 # Intro to Programming Concepts
 
 Slides and materials are hosted at [http://basics.gdicincy.com](http://basics.gdicincy.com).
@@ -29,3 +30,9 @@ In this workshop, we’ll explore some of the most basic and universal programmi
  - How Computers "Think"
  - The Development of Programming Languages
  - Variables, Conditionals, and Loops
+
+---
+
+##Credits
+
+This course is an augmented variation on the Intro to Programming Concepts developed by [GDI Ann Arbor](https://github.com/gdiannarbor/intro-programming-concepts), in turn inspired by the curriculum developed by [GDI Boulder](https://github.com/gdiboulder/gdi-boulder-intro-programming-concepts).
