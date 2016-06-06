@@ -8,7 +8,7 @@ Are you interested in learning the basics of how computers operate and how code 
 
 In this workshop, we’ll explore some of the most basic and universal programming concepts. We’ll use everyday activities and real-life examples to demonstrate common structures such as If/Then/Else statements and different kinds of loops. We’ll also try to take the mystery out of variables, and we'll talk about why computers are so picky.
 
-***Note:** This will truly be an introductory class. If you’ve taken GDI’s Intro to Javascript, Ruby, Python or any equivalent classes and successfully completed the exercises, this workshop is not for you. If you’re a programmer by profession, this workshop is not for you.*
+*Note: This will truly be an introductory class. If you’ve taken GDI’s Intro to Javascript, Ruby, Python or any equivalent classes and successfully completed the exercises, this workshop is not for you. If you’re a programmer by profession, this workshop is not for you.*
 
 **Cost:** $30
 **Duration:** 2.5 hours
